@@ -1,0 +1,78 @@
+@ECHO OFF
+
+IF {%1} == {} (
+ECHO Usage:
+ECHO         TransliterateRusToEng ^<Dictionary^>
+EXIT
+)
+
+ReplaceString.exe %1 "©" "q"
+
+MOVE /Y %1.Backup ~Backup
+
+ReplaceString.exe %1 "Ê" "w"
+ReplaceString.exe %1 "„" "e"
+ReplaceString.exe %1 "™" "r"
+ReplaceString.exe %1 "•" "t"
+ReplaceString.exe %1 "≠" "y"
+ReplaceString.exe %1 "£" "u"
+ReplaceString.exe %1 "Ë" "i"
+ReplaceString.exe %1 "È" "o"
+ReplaceString.exe %1 "ß" "p"
+ReplaceString.exe %1 "Â" "["
+ReplaceString.exe %1 "Í" "]"
+ReplaceString.exe %1 "‰" "a"
+ReplaceString.exe %1 "Î" "s"
+ReplaceString.exe %1 "¢" "d"
+ReplaceString.exe %1 "†" "f"
+ReplaceString.exe %1 "Ø" "g"
+ReplaceString.exe %1 "‡" "h"
+ReplaceString.exe %1 "Æ" "j"
+ReplaceString.exe %1 "´" "k"
+ReplaceString.exe %1 "§" "l"
+ReplaceString.exe %1 "¶" ";"
+ReplaceString.exe %1 "Ì" "'"
+ReplaceString.exe %1 "Ô" "z"
+ReplaceString.exe %1 "Á" "x"
+ReplaceString.exe %1 "·" "c"
+ReplaceString.exe %1 "¨" "v"
+ReplaceString.exe %1 "®" "b"
+ReplaceString.exe %1 "‚" "n"
+ReplaceString.exe %1 "Ï" "m"
+ReplaceString.exe %1 "°" ","
+ReplaceString.exe %1 "Ó" "."
+
+ReplaceString.exe %1 "â" "Q"
+ReplaceString.exe %1 "ñ" "W"
+ReplaceString.exe %1 "ì" "E"
+ReplaceString.exe %1 "ä" "R"
+ReplaceString.exe %1 "Ö" "T"
+ReplaceString.exe %1 "ç" "Y"
+ReplaceString.exe %1 "É" "U"
+ReplaceString.exe %1 "ò" "I"
+ReplaceString.exe %1 "ô" "O"
+ReplaceString.exe %1 "á" "P"
+ReplaceString.exe %1 "ï" "["
+ReplaceString.exe %1 "ö" "]"
+ReplaceString.exe %1 "î" "A"
+ReplaceString.exe %1 "õ" "S"
+ReplaceString.exe %1 "Ç" "D"
+ReplaceString.exe %1 "Ä" "F"
+ReplaceString.exe %1 "è" "G"
+ReplaceString.exe %1 "ê" "H"
+ReplaceString.exe %1 "é" "J"
+ReplaceString.exe %1 "ã" "K"
+ReplaceString.exe %1 "Ñ" "L"
+ReplaceString.exe %1 "Ü" ";"
+ReplaceString.exe %1 "ù" "'"
+ReplaceString.exe %1 "ü" "Z"
+ReplaceString.exe %1 "ó" "X"
+ReplaceString.exe %1 "ë" "C"
+ReplaceString.exe %1 "å" "V"
+ReplaceString.exe %1 "à" "B"
+ReplaceString.exe %1 "í" "N"
+ReplaceString.exe %1 "ú" "M"
+ReplaceString.exe %1 "Å" ","
+ReplaceString.exe %1 "û" "."
+
+MOVE /Y ~Backup %1.Backup

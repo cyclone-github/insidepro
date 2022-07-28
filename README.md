@@ -1,2 +1,2 @@
 # insidepro
-Archive of inside pro
+Archive of inside pro programs

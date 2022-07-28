@@ -1,0 +1,6 @@
+
+Exit codes:
+	0 - error
+	1 - no errors; no found passwords
+	2 - no errors; some passwords found
+	3 - no errors; all passwords found

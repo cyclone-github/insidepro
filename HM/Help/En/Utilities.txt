@@ -1,0 +1,28 @@
+
+*******************
+ Hash List Manager
+*******************
+
+1. Press F2 after the program launching, and choose a folder with the hash lists.
+
+2. You must rename the hash lists to this format:
+	"xxx.N.txt", where N is hash type from hashcat
+
+Examples:
+	"MyMD5.0.txt" for MD5 hashes.
+	"Uncracked.100.txt" for SHA-1 hashes.
+	"Left(MyBB).2811.txt" for MyBB hashes.
+	"Contest_hashes.3200.txt" for Blowfish(OpenBSD) hashes.
+	etc.
+
+3. You must have the outfile "~All.pot" in your folder;
+(the outfile format is "hash:password", or "hash:salt:password").
+
+4. The program generates the statistics for all hash lists after F5 pressing,
+and creates these files in the \Temp folder:
+	- The remaining hashes for each hash type (~N.txt).
+	- The remaining hashes for each hash list (*.txt).
+	- The dictionary for each hash list (*.dic).
+	- The outfile for each hash list (*.pot).
+	- The summary outfile (~All.pot).
+	- The summary dictionary (~All.dic).

@@ -1,0 +1,14 @@
+
+License Agreement
+
+1. All rights for "Hash Manager" are reserved to InsidePro Software.
+
+2. You may use this software for the recovery of your own forgotten passwords only.
+
+3. The software is provided on the "AS IS" basis. You use this software at your own risk. Under no circumstances shall the author be held liable for any data loss or damage, lost profits or any other damages caused by using this software.
+
+4. InsidePro Software guarantees that the software does not contain malware, spyware nor any other harmful code designed for performing any functions other than those stated in the description.
+
+5. If you do not wish to be bounded by the terms of this License Agreement, delete this software from your computer and stop using this software.
+
+6. Using the software shall indicate your acceptance of this License Agreement.

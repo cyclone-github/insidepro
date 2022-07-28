@@ -1,0 +1,9 @@
+
+Стандартные наборы символов:
+	?d - 0123456789
+	?l - abcdefghijklmnopqrstuvwxyz
+	?u - ABCDEFGHIJKLMNOPQRSTUVWXYZ
+	?s -  !@#$%^&*()`~-_=+\|[]{};:'",.<>/?
+	?h - 0123456789abcdef
+	?a - ?d?l?u?s
+	?n - 0x80...0xFF

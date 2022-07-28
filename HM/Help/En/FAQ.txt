@@ -1,0 +1,19 @@
+
+Q: How to interrupt the program?
+A: Press the keyboard shortcut Ctrl+C or Ctrl+Break. The program will save its current state and resume the attack when it is launched again.
+
+Q: How to run an attack all over?
+A: Clear the "LastPosition" parameter in the respective section of the INI file. To start an attack all over every time, set the "Read-only" attribute on the INI file.
+
+Q: How to remove the restriction to the number of dictionaries (or masks)?
+A: Set the "MaxLines" parameter to the required value in the respective section of the INI file.
+
+Q: How to ease up the entry of long algorithms on program start?
+A: Set a certain name (or number) for a certain hashing algorithm in section [Modules]; e.g.:
+	smf=sha1(strtolower($username).$pass)
+and use the program with even greater ease:
+	HM.exe smf ...
+
+Q: How to redefine the file for saving found passwords?
+A: Launch the program through the BAT file, where add the line:
+	MOVE /Y HM.out NewFile.pot

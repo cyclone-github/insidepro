@@ -1,0 +1,42 @@
+
+Rules:
+	p - copy password
+	s - copy salt
+	u - copy username
+	bXX - copy byte with specified ASCII code 0xXX
+	mN - copy block N from memory
+	eXXYY - copy 0xXX bytes from 0xYY address
+	HK - use hashing algorithm K
+	XK - use hashing algorithm K, and convert to Hex
+	MN - save to memory as block N (1...8)
+	FN - use PHP function N
+
+Algorithm (K):
+	1 - MD5
+	2 - SHA-1
+	3 - MD4
+	4 - SHA-256
+	5 - SHA-384
+	6 - SHA-512
+
+PHP function (N):
+	1 - strtolower
+	2 - strtoupper
+	3 - strrev
+	4 - base64_encode
+
+Examples:
+	*psH1		md5($pass.$salt)
+	*spH2		sha1($salt.$pass)
+	*psH4		sha256($pass.$salt)
+	*pX1H1		md5(md5($pass))
+	*pX1sH1		md5(md5($pass).$salt)
+	*ub0ApH1	md5($username.0x0A.$pass)
+	*pX1X1X1H1	md5(md5(md5(md5($pass))))
+	*pX1M1sX1m1H1	md5(md5($salt).md5($pass))
+	*pX1sH6		sha512(md5($pass).$salt)
+	*pH2e0800	substr(sha1($pass),0,16)
+	*uF1pH2		sha1(strtolower($username).$pass)
+	*uF2b3ApH2	sha1(strtoupper($username).0x3A.$pass)
+	*pF3H1		md5(strrev($pass))
+	*pF4F4H1	md5(base64_encode(base64_encode($pass)))

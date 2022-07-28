@@ -1,0 +1,80 @@
+
+$HexToPlain		converts lines from format $HEX[...] to plain text
+Base64ToHex		converts lines from Base64 to Hex
+Base64ToPlain		converts lines from Base64 to plain text
+BinToHex		converts binary file to Hex lines
+CalculateChecksum	calculates checksum for file
+CalculateRatio		calculates ratio of lines for two files
+CalculateTime		calculates time of mask processing
+CharToUnicode		converts text file to Unicode
+CombineLines		combines lines from two files
+ConvertToForum		converts outfile to "hash:[color=blue]password[/color]" format
+ConvertToLower		converts lines to lowercase
+ConvertToUpper		converts lines to uppercase
+CountLines		counts number of lines
+EnumerateLines		enumerates lines
+ExtractColumn		extracts specified column
+ExtractLines		extracts specified range of lines
+ExtractLinesByLen	extracts lines of specified length
+ExtractPasswords	extracts passwords from outfile
+ExtractRepeates		extracts repeates from lines
+FindByMask		searches passwords by mask
+FindDamagedHashes	searches partly match hashes
+FindString		searches strings
+GenerateHash		generates hash for specified password
+GenerateHashes		generates hashes for all lines from text file
+GeneratePassword	generates random password
+GenerateTestHashes	generates test hashes
+GetMasks		converts passwords to mask list
+GetMaxLen		returns maximum length of line in file
+GetTopLines		creates dictionary, sorted by frequency of passwords
+HexToBase64		converts lines from Hex to Base64
+HexToBin		converts lines from Hex to binary file
+HexToMix		generates hash array with all possible combinations of byte
+HexToPlain		converts lines from Hex to plain text
+InsertCharToPos		inserts character into specified position of each line
+IsCharset		keeps only lines that consist of specified characters
+IsCharsetInPos		keeps only lines that consist of specified characters in specified position
+IsDouble		keeps only lines that consist of double passwords
+IsEmail			keeps only lines that are mailboxes
+IsLower			keeps only lines in lowercase
+IsOutfile		keeps only lines with "hash:password" format
+IsRules			keeps only rules for HM
+IsUpper			keeps only lines in uppercase
+MergePairs		merges usernames with passwords
+MergeToOutfile		merges lists of hashes and passwords to a single outfile
+ParseDump		parses SQL dump
+PlainTo$Hex		converts lines to format $HEX[...]
+PlainToBase64		converts lines to Base64
+PlainToHex		converts lines to Hex
+RemoveChar		removes specified character
+RemoveCharInPos		removes character in specified position of each line
+RemoveColumn		removes specified column separated with colons
+RemoveDuplicates	removes lines available in second file from first file
+RemoveEmptyLines	removes empty lines
+RemoveHashes		removes hashes with found passwords
+RemoveLeft		removes left side of lines
+RemoveLines		removes lines with specified character
+RemoveOutsideChar	removes outside characters from lines
+RemoveRight		removes right side of lines
+RemoveSpecialChar	removes characters with ASCII codes below 32
+RenameByLines		renames file by number of lines
+ReplaceCharByIndex	replaces character by index
+ReplaceCharInPos	replaces character in specified position of each line
+ReplaceString		replaces string with other string
+ReverseLines		reverses lines
+SortLines		sorts lines in ascending or descending order
+SortLinesByLen		sorts lines by length
+SplitByFiles		splits file to specified number of files
+SplitByFirstChar	splits file by first character of lines
+SplitByLen		splits file by length of lines
+SplitByLines		splits file to files of specified number of lines
+SplitOutfile		splits outfile into two lists, hashes and passwords
+SwapColumns		swaps columns separated by colons
+SwapHex			swaps bytes in Hex lines
+ToggleCharCase		generates passwords with any possible character cases
+TrimLines		chops leading and trailing spaces and tab characters from lines
+TruncateLines		truncates lines to specified length
+UnicodeToChar		converts Unicode file to text file
+UseRules		use HM rules for text file
+VerifyOutfile		verifies hashes with passwords for some algorithms

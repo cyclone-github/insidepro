@@ -1,0 +1,41 @@
+
+AttackMode - attack type (following comma, attack number)
+	'1' - brute-force attack
+	'2' - mask attack
+	'3' - dictionary attack (default)
+	'4' - hybrid attack
+	'5' - combined attack
+	'6' - by rule attack
+	'7' - permutation attack
+	'8' - toggle case attack
+	'9' - insertion attack
+
+Threads - number of attack threads
+
+OutputFileFormat - found passwords file format (HM.out)
+	'0' - disable saving to file
+	'1' - hash:password
+	'2' - password
+	'3' - [username:]hash[:salt]:password (default)
+
+RemoveCrackedHashes - removing cracked hashes from source list
+	'0' - do not remove
+	'1' - remove (default)
+
+DisplayFoundPasswords - displaying found passwords
+	'0' - do not display
+	'1' - display (default)
+
+SaltInHexFormat - salt format
+	'0' - plain text format (default)
+	'1' - hexadecimal format
+
+UsernameInHexFormat - username format
+	'0' - plain text format (default)
+	'1' - hexadecimal format
+
+ConvertPasswordsToUnicode - converting passwords to Unicode
+	'0' - do not convert (default)
+	'1' - convert
+
+CustomCharacterSet1...CustomCharacterSetZ - custom character sets

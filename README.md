@@ -1,4 +1,4 @@
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=cyclone-github&repo=insidepro&theme=gruvbox)](https://github.com/cyclone-github/)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=cyclone-github&repo=insidepro&theme=gruvbox)](https://github.com/cyclone-github/)
 # insidepro
 Archive of inside pro programs
 
